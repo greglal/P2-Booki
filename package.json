@@ -1,0 +1,31 @@
+{
+  "name": "projet_booki",
+  "version": "1.0.0",
+  "description": "projet 2 formation front-end OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greglal/projet_booki.git"
+  },
+  "keywords": [
+    "booki",
+    "projet",
+    "OCR",
+    "autoprefixer",
+    "css",
+    "prefix",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "author": "Gregory Lallemand",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/greglal/projet_booki/issues"
+  },
+  "homepage": "https://github.com/greglal/projet_booki#readme"
+}
