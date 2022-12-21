@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    max-width:1400px;
+    font-family: raleway;
+    margin:auto;
+}
+
+/* ---------------------
+-------- titres --------
+--------------------- */
+h1{
+    font-size: 1.2rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 1rem;
+}
+/*  prix des chambres  */
+.prixChambre{
+    opacity:75%;
+    font-size:0.8rem;
+}
+/* -------------------
+------- header -------
+---------------------*/
+header{
+    height:120px;
+    display:flex;
+    justify-content: space-between;
+}
+/* ----- logo ----- */
+#logo{
+    margin-top:35px;
+    margin-left:55px;
+    width: 90px;
+    height: 30px;
+}
+/* ----- barre de navigation ----- */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    align-items: baseline;
+}
+/* ----- liens ----- */
+.lien_nav{
+    text-decoration: none;
+    font-size:1rem;
+    font-weight:bold;
+    color:black;
+    margin-right: 77px;
+    margin-top:48px;
+}
+/* ----- survol des liens ----- */
+.lien_nav:hover{
+    color:#0065FC;
+}
+
+/* -----------------------------------------------
+ ----- section de recherche et de filtres --------
+ -----------------------------------------------*/
+#recherche{
+    margin-left: 55px;
+    height:250px;
+}
+/* ----- description ----- */
+#description{
+    opacity:75%;
+    font-size:0.9rem;
+    margin-top:5px;
+}
+/* ----- formulaire de recherche ----- */
+form{
+    margin-top:15px;
+    width:360px;
+    height: 40px;
+    border:1px solid #D9D9D9;
+    border-radius:15px;
+    display:flex;
+}
+/* icone localisation */
+#location{
+    height:42px;
+    width:50px;
+    margin-top: -1px;
+    background-color:#D9D9D9;
+    text-align: center;
+    line-height:40px;
+    border-radius:15px 0 0 15px;
+}
+/* input texte recherche */
+#name{
+    width:210px;
+    border:none;
+}
+#name::placeholder{
+    font-weight:bold;
+    color:black;
+    padding-left: 10px;
+}
+/* bouton rechercher */
+#btn-submit{
+    height:42px;
+    width:100px;
+    border-radius:0 15px 15px 0 ;
+    border:none;
+    margin-top: -1px;
+    color:white;
+    background-color:#0065FC ;
+}
+/* ----- boutons de filtre ----- */
+#filtres{
+    width:65%;
+    height:50px;
+    margin-top:10px;
+    display: flex;
+    /*justify-content:space-around;*/
+    align-items:center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* boutons */
+.btn-filtre{
+    height:35px;
+    border:1px solid #D9D9D9;
+    border-radius:50px;
+    color:#0065FC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: white;
+    margin-left: 40px;
+}
+.btn-filtre:hover{
+    background-color:#DEEBFF;
+}
+.filter_name{
+    margin-left:10px;
+}
+/* phrase indicative avec icone */
+#indication{
+    width:40%;
+    display: flex;
+    margin-top: 10px;
+    font-size:0.8rem;
+}
+#indication p{
+    margin-left: 15px;
+}
+#indication i{
+    color:#0065FC;
+    border:1px solid #D9D9D9;
+    border-radius:50%;
+    width:15px;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* ----- -----------------------------------------------------------------------------
+-----section avec les annonces d'hébergement et les annonces les plus populaires -----
+----------------------------------------------------------------------------------- */
+#main{
+    height:650px;
+    display:flex;
+    justify-content:space-between;
+    margin-left:55px;
+}
+/* ----- section des hébergements à Marseille ----- */
+#hebergements{
+    width:60%;
+    border:1px solid #D9D9D9;
+    border-radius:15px;
+    padding: 15px;
+    background-color:#F2F2F2;
+}
+#titleHebergement{
+    margin-left:40px;
+}
+/* div contenant les 6 annonces */
+#hebergementMarseille{
+    height: 500px;
+    margin-top:10px;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+/* les annonces */
+.articleHebergements{
+    width:200px;
+    height: 200px;
+    padding:5px;
+    background-color: white;
+    border:1px solid #d9d9d9;
+    border-radius:15px;
+    box-shadow: 10px 10px 10px #D9D9D9;
+}
+/* images des annonces */
+.articleHebergements img{
+    width: 100%;
+    height:60%;
+    border:1px solid #d9d9d9;
+    border-radius:15px;
+}
+/* lien annonce qui englobe toute l'annonce */
+.annonceMarseille{
+    text-decoration:none;
+    color:black;
+}
+/* étoiles de notation des annonces */
+.stars{
+    margin-top:10px;
+    color:#0065FC;
+}
+/* lien afficher plus sous les annonces */
+#lienPlusAnnonces{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+    margin-left: 40px;
+}
+#lienPlusAnnonces:hover{
+    color:#0065FC;
+}
+/* ----- section des annonces les plus populaires ----- */
+#populaires{
+    width:30%;
+    border:1px solid #D9D9D9;
+    border-radius:15px;
+    padding: 15px;
+    background-color:#F2F2F2;
+    display:flex;
+    flex-direction: column;
+}
+/* titre avec icone */
+#titlePopulaire{
+    display:flex;
+    justify-content:space-between;
+    margin: 0 15px 0 15px;
+}
+#titlePopulaire i{
+    color:#0065FC;
+}
+/* div contenant toutes les annonces populaires */
+#annoncesPopulaires{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    margin: 20px;
+}
+/* annonces populaires */
+.articlePopulaire{
+    display:flex;
+    width:350px;
+    padding:5px;
+    background-color:white;
+    border:1px solid #d9d9d9;
+    border-radius:15px;
+    box-shadow: 10px 10px 10px #D9D9D9;
+}
+.annoncePopulaire{
+    text-decoration:none;
+    color:black;
+}
+/* photos des annonces */
+.articlePopulaire img{
+    width:150px;
+    height:150px;
+    border-radius:15px;
+}
+.textePopulaire{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+}
+
