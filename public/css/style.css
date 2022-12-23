@@ -8,9 +8,9 @@ body{
     font-family: raleway sans-serif;
 }
 
-/* ---------------------
--------- titres --------
---------------------- */
+/* *********************
+******** titres ********
+********************* */
 h1{
     font-size: 1.2rem;
 }
@@ -25,68 +25,63 @@ h3{
     font-size:0.8rem;
     opacity:75%;
 }
-/* -------------------
-------- header -------
----------------------*/
+/* *******************
+******* header *******
+******************* */
 header{
-    height:120px;
+    margin-bottom: 3%;
     display:flex;
     justify-content: space-between;
 }
-/* ----- logo ----- */
+/* ***** logo ***** */
 #logo{
-    width: 90px;
-    height: 30px;
-    margin-left:55px;
-    margin-top:35px;
+    width: 15%;
+    margin:35px 0 0 55px;
 }
-/* ----- barre de navigation ----- */
+/* ***** barre de navigation ***** */
 nav{
     display: flex;
     justify-content: flex-end;
     align-content: space-between;
     align-items: baseline;
 }
-/* ----- liens ----- */
+/* ***** liens ***** */
 .lien_nav{
-    margin-right: 77px;
-    margin-top:48px;
+    margin: 48px 55px 0 0;
     text-decoration: none;
     font-size:1rem;
     font-weight:bold;
     color:black;
 }
-/* ----- survol des liens ----- */
+/* ***** survol des liens ***** */
 .lien_nav:hover{
     color:#0065FC;
 }
 
-/* -----------------------------------------------
- ----- section de recherche et de filtres --------
- -----------------------------------------------*/
+/* ***********************************************
+ ****** section de recherche et de filtres *******
+ ********************************************** */
 #recherche{
-    height:250px;
     margin-left: 55px;
+    margin-bottom: 3%;
 }
-/* ----- description ----- */
+/* ***** description ***** */
 #description{
     margin-top:5px;
     font-size:0.9rem;
     opacity:75%;
 }
-/* ----- formulaire de recherche ----- */
+/* ***** formulaire de recherche ***** */
 form{
     width:360px;
     height: 40px;
     margin-top:15px;
     display:flex;
-    border:1px solid #D9D9D9;
     border-radius:15px;
 }
 /* icone localisation */
 #location{
-    width:50px;
-    height:42px;
+    width:12%;
     margin-top: -1px;
     border-radius:15px 0 0 15px;
     background-color:#D9D9D9;
@@ -105,20 +100,18 @@ form{
 }
 /* bouton rechercher */
 #btn-submit{
-    width:100px;
-    height:42px;
-    margin-top: -1px;
+    width:30%;
     border:none;
     border-radius:0 15px 15px 0 ;
     background-color:#0065FC ;
     color:white;
 }
-/* ----- boutons de filtre ----- */
+/* ***** boutons de filtre ***** */
 #filtres{
-    width:65%;
-    height:50px;
-    margin-top:10px;
+    width:60%;
+    margin-top:1%;
     display: flex;
+    justify-content: space-between;
     align-items:center;
     font-size: 1rem;
     font-weight: bold;
@@ -126,9 +119,8 @@ form{
 /* boutons */
 .btn-filtre{
     height:35px;
-    margin-left: 40px;
-    padding-left:15px;
-    padding-right:15px;
+    margin-left: 20px;
+    padding:0 15px 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,7 +146,8 @@ form{
     margin-left: 15px;
 }
 #indication i{
-    width:15px;
+    width:20px;
+    height:20px;
     border:1px solid #D9D9D9;
     border-radius:50%;
     text-align: center;
@@ -162,16 +155,16 @@ form{
     color:#0065FC;
 }
 
-/* ----- -----------------------------------------------------------------------------
------section avec les annonces d'hébergement et les annonces les plus populaires -----
------------------------------------------------------------------------------------ */
+/* ************************************************************************************
+***** section avec les annonces d'hébergement et les annonces les plus populaires *****
+************************************************************************************ */
 #main{
     height:650px;
-    margin-left:55px;
+    margin:0 50px 0 50px;
     display:flex;
     justify-content:space-between;
 }
-/* ----- section des hébergements à Marseille ----- */
+/* ***** section des hébergements à Marseille ***** */
 #hebergements{
     width:60%;
     padding: 15px;
@@ -189,11 +182,10 @@ form{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* les annonces */
 .articleHebergements {
-    width: 200px;
     height: 200px;
     padding: 5px;
     border-radius: 15px;
@@ -204,11 +196,12 @@ form{
 .articleHebergements img{
     width: 100%;
     height:60%;
-    border:1px solid #d9d9d9;
     border-radius:15px;
+    object-fit: cover;
 }
 /* lien annonce qui englobe toute l'annonce */
 .annonceMarseille{
+    width:30%;
     text-decoration:none;
     color:black;
 }
@@ -227,7 +220,7 @@ form{
 #lienPlusAnnonces:hover{
     color:#0065FC;
 }
-/* ----- section des annonces les plus populaires ----- */
+/* ***** section des annonces les plus populaires ***** */
 #populaires{
     width:30%;
     padding: 15px;
@@ -247,15 +240,20 @@ form{
 }
 /* div contenant toutes les annonces populaires */
 #annoncesPopulaires{
-    height: 550px;
+    height: 80%;
     margin: 20px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.annonceMarseille{
+    max-height: 220px;
+}
 /* annonces populaires */
 .articlePopulaire{
-    width:350px;
+    width:100%;
+    height:100%;
+    min-height: 135px;
     padding:5px;
     display:flex;
     border-radius:15px;
@@ -263,40 +261,49 @@ form{
     background-color:white;
 }
 .annoncePopulaire{
+    height:25%;
+    min-height: 145px;
     text-decoration:none;
     color:black;
 }
 /* photos des annonces */
 .articlePopulaire img{
-    width:150px;
-    height:150px;
+    width:30%;
+    height:100%;
     border-radius:15px;
+    margin:auto;
+    object-fit: cover;
 }
 .textePopulaire{
+    width:60%;
     margin: 15px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* -----------------------------------------------------
------ Section concernant les activités à Marseille -----
------------------------------------------------------ */
+/* *****************************************************
+***** Section concernant les activités à Marseille *****
+***************************************************** */
 #activites{
     height:550px;
-    margin-left:55px;
-    margin-top:50px;
+    margin:50px 55px 0 55px;
 }
 /* div contenant les activités */
 #liensActivites{
+    height:100%;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
+.lienActivite{
+    width:22%;
+    height:90%;
+}
 /* activités */
 .ActiviteMarseille{
-    width: 300px;
-    height:450px;
+    width: 100%;
+    height:100%;
     border-radius:15px;
     box-shadow: 10px 10px 10px #D9D9D9;
     text-decoration: none;
@@ -304,8 +311,9 @@ form{
 /* images activités */
 .ActiviteMarseille img{
     width:100%;
-    height:400px;
+    height:85%;
     border-radius:15px 15px 0 0;
+    object-fit: cover;
 }
 /* articles activités */
 .lienActivite{
@@ -314,23 +322,24 @@ form{
 }
 /* nom de l'activité */
 .titreActivite{
+    height:10%;
     margin-left:15px;
-    margin-top:10px;
+    margin-top:10%;
 }
 
-/* -------------------------
----------- footer ----------
-------------------------- */
+/* *************************
+********** footer **********
+************************* */
 footer{
     height:200px;
-    margin:15px 0 0 45px;
+    margin:15px 50px 0 45px;
     display:flex;
     justify-content: space-between;
     background-color:#F2F2F2;
 }
 /* catégorie */
 .rubriqueFooter{
-    width:400px;
+    width:30%;
     margin: 50px;
 }
 /* liens dans le footer */
@@ -347,3 +356,43 @@ footer{
     color:#0065FC;
 }
 
+/* *****************************
+***** media query tablette *****
+***************************** */
+@media (min-width: 768px) and (max-width: 992px) {
+    #filtres{
+        width:90%;
+    }
+    /* annonces hébergements et populaires */
+    #main{
+        height:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    #hebergements{
+        width:100%;
+    }
+    #populaires{
+        width:100%;
+        margin-top:40px;
+    }
+    #annoncesPopulaires{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .annoncePopulaire{
+        width:30%;
+    }
+    .articlePopulaire img{
+        width:30%;
+        min-height:130px;
+    }
+}
+
+/* ********************************
+***** media query smartphones *****
+******************************** */
+@media (max-width: 767.9px){
+
+}
