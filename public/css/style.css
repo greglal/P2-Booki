@@ -12,17 +12,17 @@ body{
 ******** titres ********
 ********************* */
 h1{
-    font-size: 1.2rem;
+    font-size: 1.4vw;
 }
 h2{
-    font-size: 1.2rem;
+    font-size: 1.4vw;
 }
 h3{
-    font-size: 1rem;
+    font-size: 1.2vw;
 }
 /*  prix des chambres  */
 .prixChambre{
-    font-size:0.8rem;
+    font-size:1vw;
     opacity:75%;
 }
 /* *******************
@@ -46,16 +46,16 @@ nav{
     align-items: baseline;
 }
 /* ***** liens ***** */
-.lien_nav{
+.lienNav{
     margin: 0 55px 0 0;
     padding-top: 45px;
     text-decoration: none;
-    font-size:1rem;
+    font-size:1.2vw;
     font-weight:bold;
     color:black;
 }
 /* ***** survol des liens ***** */
-.lien_nav:hover{
+.lienNav:hover{
     color:#0065FC;
     border-top:3px solid #0065FC;
 }
@@ -70,7 +70,7 @@ nav{
 /* ***** description ***** */
 #description{
     margin-top:5px;
-    font-size:0.9rem;
+    font-size:1.1vw;
     opacity:75%;
 }
 /* ***** formulaire de recherche ***** */
@@ -108,23 +108,35 @@ form{
     background-color:#0065FC ;
     color:white;
 }
+#loupe{
+    display:none;
+}
 /* ***** boutons de filtre ***** */
+#barreFiltres{
+    display:flex;
+}
+#titreFiltres{
+    font-weight:bold;
+    margin-top:1.5%;
+}
 #filtres{
     width:60%;
-    margin-top:1%;
+    margin:1% 0 0 1%;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 /* boutons */
 .btn-filtre{
-    height:35px;
-    margin-left: 20px;
+    height:2.7vw;
+    /*width:20%;*/
+    margin-right: 1%;
+    justify-content:center;
     padding:0 15px 0 15px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-around;*/
     align-items: center;
     border:1px solid #D9D9D9;
     border-radius:50px;
@@ -142,7 +154,7 @@ form{
     width:40%;
     margin-top: 10px;
     display: flex;
-    font-size:0.8rem;
+    font-size:1vw;
 }
 #indication p{
     margin-left: 15px;
@@ -161,7 +173,7 @@ form{
 ***** section avec les annonces d'hébergement et les annonces les plus populaires *****
 ************************************************************************************ */
 #main{
-    height:650px;
+    min-height:650px;
     margin:0 50px 0 50px;
     display:flex;
     justify-content:space-between;
@@ -178,9 +190,9 @@ form{
 }
 /* div contenant les 6 annonces */
 #hebergementMarseille{
-    height: 500px;
+    min-height: 500px;
     margin-top:10px;
-    padding:15px;
+   /* padding:15px;*/
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -207,9 +219,16 @@ form{
     text-decoration:none;
     color:black;
 }
+.descriptifHebergement{
+    height:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-left: 2%;
+}
 /* étoiles de notation des annonces */
 .stars{
-    margin-top:10px;
+    margin-bottom:10px;
     color:#0065FC;
 }
 /* lien afficher plus sous les annonces */
@@ -218,6 +237,7 @@ form{
     text-decoration:none;
     color:black;
     font-weight: bold;
+    font-size:1.4vw;
 }
 #lienPlusAnnonces:hover{
     color:#0065FC;
@@ -257,7 +277,7 @@ form{
 /* annonces populaires */
 .articlePopulaire{
     width:100%;
-    height:100%;
+    height:80%;
     min-height: 135px;
     padding:5px;
     display:flex;
@@ -266,14 +286,14 @@ form{
     background-color:white;
 }
 .annoncePopulaire{
-    height:25%;
     min-height: 145px;
+    margin-bottom: 10%;
     text-decoration:none;
     color:black;
 }
 /* photos des annonces */
 .articlePopulaire img{
-    width:30%;
+    width:40%;
     height:100%;
     border-radius:15px 0 0 15px;
     margin:auto;
@@ -281,7 +301,7 @@ form{
 }
 .textePopulaire{
     width:60%;
-    margin: 15px;
+    margin: 3%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -327,7 +347,6 @@ form{
 }
 /* nom de l'activité */
 .titreActivite{
-    height:10%;
     margin-left:15px;
     margin-top:10%;
 }
@@ -388,6 +407,7 @@ footer{
     }
     .annoncePopulaire{
         width:30%;
+        margin-bottom: 0;
     }
     .articlePopulaire img{
         width:30%;
@@ -399,5 +419,193 @@ footer{
 ***** media query smartphones *****
 ******************************** */
 @media (max-width: 767.9px){
+    /* ***** header ***** */
+    header{
+        width:100%;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    /* logo */
+    #lienLogo{
+        width: 100%;
+        text-align: center;
+    }
+    #logo{
+        margin:30px 0 0 0;
+    }
+    /* nav */
+    nav{
+        width: 100%;
+        justify-content:space-around;
+    }
+    .lienNav{
+        font-size:4vw;
+        font-weight:normal;
+        margin:0;
+        padding-bottom:20px;
+    }
+    .lienNav:hover{
+        color:#0065FC;
+        border-bottom:3px solid #0065FC;
+        border-top:none;
+    }
+    /* ***** section recherche / filtres ***** */
+    h1{
+        font-size:6vw;
+        margin-right: 10%;
+    }
+    h2{
+        font-size:4vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    #recherche{
+        width:90%;
+    }
+    /* description */
+    #description{
+        font-size:4vw;
+        margin-top: 3%;
+    }
+    /* barre de recherche */
+    form{
+        margin-top: 5%;
+        width:90%;
+        height:8vh;
+    }
+    /* icone localisation */
+    #location{
+        background-color: white;
+        width:10%;
+        margin-top:1%;
+    }
+    /* input text */
+    #name{
+        width:80%;
+        font-size:4vw;
+        margin-left: 5%;
+    }
+    /* bouton recherche */
+    #btn-submit{
+        width:10%;
+    }
+    #btn-submit span{
+        display:none;
+    }
+    #loupe {
+        display:block;
+    }
+    /* ***** barre des filtres ***** */
+    #barreFiltres{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    #titreFiltres{
+        font-size:4vw;
+    }
+    /* boutons */
+    #filtres{
+        flex-wrap:wrap;
+        width:90%;
+        justify-content: space-around;
+    }
+    .btn-filtre{
+        width:45%;
+        justify-content: flex-start;
+        font-size: 3vw;
+        margin-bottom: 3%;
+        padding:5% 2% 5% 2%;
+    }
+    /* texte indicatif*/
+    #indication{
+        width:90%;
+        font-size: 3vw;
+        margin-left: 3%;
+    }
+    /* ***** main ***** */
+    #main{
+        flex-direction: column;
+        height:100%;
+        width:85%;
+    }
+    .prixChambre{
+        font-size:3vw;
+    }
+    /* populaires */
+    #populaires{
+        order:1;
+        width: 90%;
+        margin-bottom:5%;
+    }
+    .articlePopulaire img{
+        min-height:150px;
+    }
+    /* hebergements */
+    #hebergements{
+        order:2;
+        width:90%;
+        height:100%;
+    }
+    #hebergementMarseille{
+        height: 100%;
+        min-height:2000px;
+        width:100%;
+    }
+    .annonceMarseille {
+        width: 90%;
+        margin-bottom: 3%;
 
+    }
+    .articleHebergements{
+        height:100%;
+        min-height:300px;
+    }
+    .articleHebergements img{
+        object-fit: cover;
+        height:60%;
+    }
+    .descriptifHebergement{
+        height:40%;
+    }
+    #lienPlusAnnonces{
+        font-size:3vw;
+    }
+    /* ***** activités ***** */
+    #activites{
+        height:100%;
+        width:90%;
+    }
+    #liensActivites{
+        flex-direction: column;
+    }
+    .lienActivite{
+        width:90%;
+        margin-bottom:5%;
+    }
+    .ActiviteMarseille img{
+       max-height:250px;
+    }
+    .titreActivite{
+        margin: 2%;
+        padding-bottom: 2%;
+    }
+    /* ***** footer ***** */
+    footer{
+        flex-direction:column;
+        height:100%;
+        width:90%;
+        /*margin-left:0;*/
+    }
+    .rubriqueFooter{
+        width:60%;
+    }
+    .titreLienRubriqueFooter{
+        font-size:4vw;
+    }
+    .listeRubriqueFooter{
+        font-size: 4vw;
+    }
 }
