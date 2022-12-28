@@ -29,7 +29,7 @@ h3{
 ******* header *******
 ******************* */
 header{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     display:flex;
     justify-content: space-between;
 }
@@ -49,10 +49,10 @@ nav{
 .lienNav{
     margin: 0 55px 0 0;
     padding-top: 45px;
-    text-decoration: none;
     font-size:1.2vw;
     font-weight:bold;
     color:black;
+    text-decoration: none;
 }
 /* ***** survol des liens ***** */
 .lienNav:hover{
@@ -65,11 +65,12 @@ nav{
  ********************************************** */
 #recherche{
     margin-left: 55px;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 /* ***** description ***** */
 #description{
     margin-top:5px;
+    margin-bottom:2%;
     font-size:1.1vw;
     opacity:75%;
 }
@@ -78,6 +79,7 @@ form{
     width:360px;
     height: 40px;
     margin-top:15px;
+    margin-bottom: 1%;
     display:flex;
     border-radius:15px;
 }
@@ -92,7 +94,8 @@ form{
 }
 /* input texte recherche */
 #name{
-    width:210px;
+    width:55%;
+    font-size:1.2vw;
     border:none;
 }
 #name::placeholder{
@@ -103,6 +106,7 @@ form{
 /* bouton rechercher */
 #btn-submit{
     width:30%;
+    font-size:1.2vw;
     border:none;
     border-radius:0 15px 15px 0 ;
     background-color:#0065FC ;
@@ -114,6 +118,7 @@ form{
 /* ***** boutons de filtre ***** */
 #barreFiltres{
     display:flex;
+    margin-bottom:2%;
 }
 #titreFiltres{
     font-weight:bold;
@@ -131,12 +136,10 @@ form{
 /* boutons */
 .btn-filtre{
     height:2.7vw;
-    /*width:20%;*/
     margin-right: 1%;
-    justify-content:center;
     padding:0 15px 0 15px;
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content:center;
     align-items: center;
     border:1px solid #D9D9D9;
     border-radius:50px;
@@ -192,7 +195,6 @@ form{
 #hebergementMarseille{
     min-height: 500px;
     margin-top:10px;
-   /* padding:15px;*/
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -221,10 +223,10 @@ form{
 }
 .descriptifHebergement{
     height:45%;
+    margin-left: 2%;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    margin-left: 2%;
 }
 /* étoiles de notation des annonces */
 .stars{
@@ -295,8 +297,8 @@ form{
 .articlePopulaire img{
     width:40%;
     height:100%;
-    border-radius:15px 0 0 15px;
     margin:auto;
+    border-radius:15px 0 0 15px;
     object-fit: cover;
 }
 .textePopulaire{
@@ -471,13 +473,12 @@ footer{
     }
     /* barre de recherche */
     form{
-        margin-top: 5%;
         width:90%;
         height:8vh;
+        margin-top: 5%;
     }
     /* icone localisation */
     #location{
-        background-color: white;
         width:10%;
         margin-top:1%;
     }
@@ -499,25 +500,25 @@ footer{
     }
     /* ***** barre des filtres ***** */
     #barreFiltres{
+        width:100%;
         display: flex;
         flex-direction: column;
-        width:100%;
     }
     #titreFiltres{
         font-size:4vw;
     }
     /* boutons */
     #filtres{
-        flex-wrap:wrap;
         width:90%;
+        flex-wrap:wrap;
         justify-content: space-around;
     }
     .btn-filtre{
         width:45%;
-        justify-content: flex-start;
-        font-size: 3vw;
         margin-bottom: 3%;
         padding:5% 2% 5% 2%;
+        justify-content: flex-start;
+        font-size: 3vw;
     }
     /* texte indicatif*/
     #indication{
@@ -527,9 +528,9 @@ footer{
     }
     /* ***** main ***** */
     #main{
-        flex-direction: column;
-        height:100%;
         width:85%;
+        height:100%;
+        flex-direction: column;
     }
     .prixChambre{
         font-size:3vw;
@@ -550,14 +551,13 @@ footer{
         height:100%;
     }
     #hebergementMarseille{
+        width:100%;
         height: 100%;
         min-height:2000px;
-        width:100%;
     }
     .annonceMarseille {
-        width: 90%;
+        width: 100%;
         margin-bottom: 3%;
-
     }
     .articleHebergements{
         height:100%;
@@ -575,8 +575,8 @@ footer{
     }
     /* ***** activités ***** */
     #activites{
-        height:100%;
         width:90%;
+        height:100%;
     }
     #liensActivites{
         flex-direction: column;
@@ -594,10 +594,9 @@ footer{
     }
     /* ***** footer ***** */
     footer{
-        flex-direction:column;
+        width:85%;
         height:100%;
-        width:90%;
-        /*margin-left:0;*/
+        flex-direction:column;
     }
     .rubriqueFooter{
         width:60%;
