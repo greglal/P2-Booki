@@ -5,7 +5,7 @@
 body{
     max-width:1400px;
     margin:auto;
-    font-family: raleway sans-serif;
+    font-family: raleway;
 }
 
 /* *********************
@@ -15,14 +15,14 @@ h1{
     font-size: 1.4vw;
 }
 h2{
-    font-size: 1.4vw;
+    font-size: 1.2vw;
 }
 h3{
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 /*  prix des chambres  */
 .prixChambre{
-    font-size:1vw;
+    font-size:0.8vw;
     opacity:75%;
 }
 /* *******************
@@ -72,13 +72,13 @@ nav{
 /* ***** description ***** */
 #description{
     margin-top:5px;
-    font-size:1.1vw;
+    font-size:1vw;
     opacity:75%;
 }
 /* ***** formulaire de recherche ***** */
 form{
-    width:360px;
-    height: 40px;
+    width:30vw;
+    height: 5vh;
     margin-top:15px;
     margin-bottom: 1%;
     display:flex;
@@ -96,7 +96,7 @@ form{
 /* input texte recherche */
 #name{
     width:55%;
-    font-size:1.2vw;
+    font-size:1vw;
     border:none;
 }
 #name::placeholder{
@@ -107,11 +107,11 @@ form{
 /* bouton rechercher */
 #btn-submit{
     width:30%;
-    font-size:1.2vw;
     border:none;
     border-radius:0 15px 15px 0 ;
     background-color:#0065FC ;
     color:white;
+    font-size: 1vw;
 }
 #loupe{
     display:none;
@@ -123,7 +123,11 @@ form{
 }
 #titreFiltres{
     font-weight:bold;
-    margin-top:1.5%;
+    display:flex;
+    align-items:center;
+}
+#filtre{
+    font-size:1vw;
 }
 #filtres{
     width:60%;
@@ -136,7 +140,7 @@ form{
 }
 /* boutons */
 .btn-filtre{
-    height:2.7vw;
+    height:5vh;
     margin-right: 1%;
     padding:0 15px 0 15px;
     display: flex;
@@ -152,10 +156,11 @@ form{
 }
 .filter_name{
     margin-left:10px;
+    font-size: 1vw;
 }
 /* phrase indicative avec icone */
 #indication{
-    width:40%;
+    width:50%;
     display: flex;
     font-size:1vw;
 }
@@ -239,7 +244,7 @@ form{
     text-decoration:none;
     color:black;
     font-weight: bold;
-    font-size:1.4vw;
+    font-size:1vw;
 }
 #lienPlusAnnonces:hover{
     color:#0065FC;
@@ -392,8 +397,44 @@ footer{
 ***** media query tablette *****
 ***************************** */
 @media (min-width: 768px) and (max-width: 992px) {
+    h1{
+        font-size: 2.2vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    h3{
+        font-size: 1.8vw;
+    }
+    /* ***** liens ***** */
+    .lienNav{
+        font-size:1.6vw;
+    }
+    /*  prix des chambres  */
+    .prixChambre{
+        font-size:1.2vw;
+        opacity:75%;
+    }
+    #description{
+        font-size: 2vw;
+    }
+    #name{
+        font-size:1.6vw;
+    }
+    #btn-submit{
+        font-size: 1.6vw;
+    }
     #filtres{
         width:90%;
+    }
+    .filter_name{
+        font-size:1.6vw;
+    }
+    #filtre{
+        font-size:1.6vw;
+    }
+    #indication{
+        font-size:1.4vw;
     }
     /* annonces hébergements et populaires */
     #main{
@@ -482,7 +523,7 @@ footer{
     /* barre de recherche */
     form{
         width:90%;
-        height:8vh;
+        height:5vh;
         margin-top: 5%;
     }
     /* icone localisation */
@@ -493,8 +534,14 @@ footer{
     /* input text */
     #name{
         width:80%;
-        font-size:4vw;
+        font-size:3vw;
         margin-left: 5%;
+    }
+    .filter_name{
+        font-size: 3vw;
+    }
+    #filtre{
+        font-size: 3vw;
     }
     /* bouton recherche */
     #btn-submit{
