@@ -214,6 +214,7 @@ form{
     height:60%;
     border-radius:15px 15px 0 0;
     object-fit: cover;
+    overflow:hidden;
 }
 /* lien annonce qui englobe toute l'annonce */
 .annonceMarseille{
@@ -279,7 +280,7 @@ form{
 /* annonces populaires */
 .articlePopulaire{
     width:100%;
-    height:80%;
+    height:100%;
     min-height: 135px;
     padding:5px;
     display:flex;
@@ -300,6 +301,7 @@ form{
     margin:auto;
     border-radius:15px 0 0 15px;
     object-fit: cover;
+    overflow:hidden;
 }
 .textePopulaire{
     width:60%;
@@ -341,6 +343,7 @@ form{
     height:85%;
     border-radius:15px 15px 0 0;
     object-fit: cover;
+    overflow:hidden;
 }
 /* articles activités */
 .lienActivite{
@@ -528,7 +531,7 @@ footer{
     }
     /* ***** main ***** */
     #main{
-        width:90%;
+        width:85%;
         height:100%;
         flex-direction: column;
     }
@@ -542,8 +545,9 @@ footer{
         margin-bottom:5%;
     }
     .articlePopulaire img{
-        min-height:150px;
-        max-height:190px;
+        /*min-height:150px;
+        max-height:190px;*/
+        height:200px;
     }
     /* hebergements */
     #hebergements{
