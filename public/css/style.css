@@ -528,7 +528,7 @@ footer{
     }
     /* ***** main ***** */
     #main{
-        width:85%;
+        width:90%;
         height:100%;
         flex-direction: column;
     }
@@ -543,6 +543,7 @@ footer{
     }
     .articlePopulaire img{
         min-height:150px;
+        max-height:190px;
     }
     /* hebergements */
     #hebergements{
