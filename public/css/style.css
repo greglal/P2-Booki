@@ -176,7 +176,6 @@ form{
 ***** section avec les annonces d'hébergement et les annonces les plus populaires *****
 ************************************************************************************ */
 #main{
-    min-height:650px;
     margin:0 50px 0 50px;
     display:flex;
     justify-content:space-between;
