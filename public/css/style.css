@@ -471,7 +471,7 @@ footer{
         font-size: 3vw;
     }
     #recherche{
-        width:100%;
+        width:95%;
         margin-left:5%;
         justify-content:center;
     }
@@ -611,7 +611,7 @@ footer{
         width:100%;
         height:100%;
         flex-direction:column;
-        margin-left:0;
+        margin:0;
     }
     .rubriqueFooter{
         width:60%;
