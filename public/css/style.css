@@ -66,11 +66,12 @@ nav{
 #recherche{
     margin-left: 55px;
     margin-bottom: 4%;
+    display:flex;
+    flex-direction:column;
 }
 /* ***** description ***** */
 #description{
     margin-top:5px;
-    margin-bottom:2%;
     font-size:1.1vw;
     opacity:75%;
 }
@@ -155,7 +156,6 @@ form{
 /* phrase indicative avec icone */
 #indication{
     width:40%;
-    margin-top: 10px;
     display: flex;
     font-size:1vw;
 }
@@ -214,6 +214,7 @@ form{
     height:60%;
     border-radius:15px 15px 0 0;
     object-fit: cover;
+    overflow:hidden;
 }
 /* lien annonce qui englobe toute l'annonce */
 .annonceMarseille{
@@ -279,7 +280,7 @@ form{
 /* annonces populaires */
 .articlePopulaire{
     width:100%;
-    height:80%;
+    height:100%;
     min-height: 135px;
     padding:5px;
     display:flex;
@@ -300,6 +301,7 @@ form{
     margin:auto;
     border-radius:15px 0 0 15px;
     object-fit: cover;
+    overflow:hidden;
 }
 .textePopulaire{
     width:60%;
@@ -334,6 +336,8 @@ form{
     border-radius:15px;
     box-shadow: 10px 10px 10px #D9D9D9;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 /* images activités */
 .ActiviteMarseille img{
@@ -341,6 +345,7 @@ form{
     height:85%;
     border-radius:15px 15px 0 0;
     object-fit: cover;
+    overflow:hidden;
 }
 /* articles activités */
 .lienActivite{
@@ -349,8 +354,10 @@ form{
 }
 /* nom de l'activité */
 .titreActivite{
+    height:15%;
+    display: flex;
+    align-items: center;
     margin-left:15px;
-    margin-top:10%;
 }
 
 /* *************************
@@ -464,7 +471,9 @@ footer{
         font-size: 3vw;
     }
     #recherche{
-        width:90%;
+        width:100%;
+        margin-left:5%;
+        justify-content:center;
     }
     /* description */
     #description{
@@ -497,6 +506,7 @@ footer{
     }
     #loupe {
         display:block;
+        font-size:3vw;
     }
     /* ***** barre des filtres ***** */
     #barreFiltres{
@@ -528,9 +538,11 @@ footer{
     }
     /* ***** main ***** */
     #main{
-        width:85%;
+        width:100%;
         height:100%;
         flex-direction: column;
+        align-items: center;
+        margin:0;
     }
     .prixChambre{
         font-size:3vw;
@@ -542,7 +554,7 @@ footer{
         margin-bottom:5%;
     }
     .articlePopulaire img{
-        min-height:150px;
+        height:200px;
     }
     /* hebergements */
     #hebergements{
@@ -575,11 +587,13 @@ footer{
     }
     /* ***** activités ***** */
     #activites{
-        width:90%;
+        width:100%;
         height:100%;
+        margin-left:0;
     }
     #liensActivites{
         flex-direction: column;
+        align-items:center;
     }
     .lienActivite{
         width:90%;
@@ -594,9 +608,10 @@ footer{
     }
     /* ***** footer ***** */
     footer{
-        width:85%;
+        width:100%;
         height:100%;
         flex-direction:column;
+        margin-left:0;
     }
     .rubriqueFooter{
         width:60%;
