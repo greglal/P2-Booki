@@ -193,9 +193,6 @@ form{
     border-radius:15px;
     background-color:#F2F2F2;
 }
-#titleHebergement{
-    margin-left:40px;
-}
 /* div contenant les 6 annonces */
 #hebergementMarseille{
     min-height: 500px;
