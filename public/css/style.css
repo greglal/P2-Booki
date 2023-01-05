@@ -188,6 +188,7 @@ form{
 /* ***** section des hébergements à Marseille ***** */
 #hebergements{
     width:60%;
+    max-height: 560px;
     padding: 15px;
     border-radius:15px;
     background-color:#F2F2F2;
@@ -252,6 +253,7 @@ form{
 /* ***** section des annonces les plus populaires ***** */
 #populaires{
     width:30%;
+    max-height: 560px;
     padding: 15px;
     display:flex;
     flex-direction: column;
@@ -529,13 +531,11 @@ footer{
     /* icone localisation */
     #location{
         width:10%;
-        margin-top:1%;
     }
     /* input text */
     #name{
         width:80%;
         font-size:3vw;
-        margin-left: 5%;
     }
     .filter_name{
         font-size: 3vw;
