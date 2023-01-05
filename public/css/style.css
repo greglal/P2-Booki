@@ -40,6 +40,7 @@ header{
 }
 /* ***** barre de navigation ***** */
 nav{
+    width:30%;
     display: flex;
     justify-content: flex-end;
     align-content: space-between;
@@ -47,7 +48,8 @@ nav{
 }
 /* ***** liens ***** */
 .lienNav{
-    margin: 0 55px 0 0;
+    width:50%;
+    text-align: center;
     padding-top: 45px;
     font-size:1.2vw;
     font-weight:bold;
