@@ -446,6 +446,9 @@ footer{
     #hebergements{
         width:100%;
     }
+    #lienPlusAnnonces{
+        font-size:1.8vw;
+    }
     #populaires{
         width:100%;
         margin-top:40px;
@@ -596,6 +599,7 @@ footer{
     #populaires{
         order:1;
         width: 90%;
+        max-height: 5000px;
         margin-bottom:5%;
     }
     .articlePopulaire img{
@@ -606,6 +610,7 @@ footer{
         order:2;
         width:90%;
         height:100%;
+        max-height: 5000px;
     }
     #hebergementMarseille{
         width:100%;
