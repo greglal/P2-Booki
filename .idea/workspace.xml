@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d1b78c-395c-4529-b374-d782515a6d37" name="Changes" comment="modification dossier parent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,13 @@
       <workItem from="1673602223621" duration="6174000" />
       <workItem from="1673609810644" duration="127000" />
       <workItem from="1673610247590" duration="34000" />
-      <workItem from="1673698497884" duration="345000" />
+      <workItem from="1673698497884" duration="587000" />
+      <workItem from="1673998884536" duration="3000" />
+      <workItem from="1674122272140" duration="35000" />
+      <workItem from="1674127563885" duration="671000" />
+      <workItem from="1674138808478" duration="25000" />
+      <workItem from="1674141162870" duration="454000" />
+      <workItem from="1674141757512" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="modification dossier parent">
       <created>1673211742735</created>
@@ -74,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673609153184</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modification dossier parent">
+      <created>1673699077243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673699077244</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
